@@ -8,9 +8,10 @@
 //     console.log("Please enter characters")
 // }
 
-//generate password  
+//generate password
+function generate() {}
+
 // get characters
 //randomly select characters to make password of x length
-
 
 //display password
