@@ -12,27 +12,29 @@
     <header>
       <h1>Password Generator</h1>
     </header>
-<!-- CONTAINER -->
+
+    <!-- CONTAINER -->
     <div class="container">
-    <!-- ROW -->
+
+      <!-- ROW -->
       <div class="row">
-        <div class="col">
-<div class="content">
-  <h2>Generate a Random Password!</h2>
-  <br>
-  <input type="text" id="display">
-  <br>
-  <input type="range" min="0" max="50" name="slider">
-  <br>
+
+        <div class="col-lg-6 col-sm-12">
+
+          <!-- CONTENT SECTION -->
+      <div class="content">
+        <h2>Generate a Random Password!</h2>
+        <br />
+        <input type="text" id="display">
+        <br />
+        <input type="range" min="0" max="50" name="slider" id="slider">
+        <br />
+
+        <!-- BUTTON -->
+        <button onclick="">Generate Password</button>
+        <button onclick="">Copy to clipboard</button>
+        <div id="length"></div>
       </div>
-      <button onclick="">Generate Password</button>
-      <button onclick="">Copy to clipboard</button>
-    </div>
-
-
-
-
-
 
     <script src="script.js"></script>
   </body>
