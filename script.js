@@ -32,3 +32,23 @@ document.getElementById("slider").oninput = function () {
   //   document.getElementById("length").innerHTML = "Length: 8";
   // }
 };
+
+// NEED CONDITION STATEMENT FOR CHECKBOXES
+
+// function box() {
+//   allChecked (document.querySelectorAll(#uppercase,
+//     #lowercase,
+//     #numbers,
+//     #specialChar))
+
+//   var checkbox = document.getElementById(
+
+//   );
+//   // var text = document.getElementById("text");
+//   if (checkbox.checked === true) {
+//     console.log("boxes checked");
+//     // } else {
+//     //   text.display = "none";
+//     // }
+//   }
+// }
