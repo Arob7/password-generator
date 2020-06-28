@@ -1,11 +1,9 @@
-h1 {
+h1,
+h2 {
   text-align: center;
   color: darkgreen;
 }
 
-h2 {
-  color: darkgreen;
-}
 body {
   background-color: goldenrod;
 }
@@ -16,14 +14,15 @@ body {
   padding: 20px;
   width: 100%;
   border-style: groove;
+  text-align: center;
 }
 
 #display {
-  width: 100%;
+  width: 50%;
 }
 
 #slider {
-  width: 100%;
+  width: 50%;
 }
 
 #length {
