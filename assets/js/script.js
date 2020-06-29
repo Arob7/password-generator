@@ -13,29 +13,32 @@ function gen() {
 
   if (includeSpecialCharacters) {
     val = val + specialChar;
-  } else {
-    includeSpecialCharacters = false;
-    val = lowercase + uppercase + numbers;
   }
+  // else {
+  //   includeSpecialCharacters = false;
+  //   val = lowercase + uppercase + numbers;
+  // }
   if (includeNumberCharacters) {
     val = val + numbers;
-  } else {
-    includeNumberCharacters = false;
-    val = lowercase + uppercase + specialChar;
   }
+  // else {
+  //   includeNumberCharacters = false;
+  //   val = lowercase + uppercase + specialChar;
+  // }
   if (includeLowerCaseCharacters) {
     val = val + lowercase;
-  } else {
-    includeLowerCaseCharacters = false;
-    val = uppercase + numbers + specialChar;
   }
+  // else {
+  //   includeLowerCaseCharacters = false;
+  //   val = uppercase + numbers + specialChar;
+  // }
   if (includeUpperCaseCharacters) {
     val = val + uppercase;
-  } else {
-    includeUpperCaseCharacters = false;
-    val = lowercase + numbers + specialChar;
   }
-  // COULD NOT FIGURE OUT HOW TO DISPLAY PASSWORD FROM WHAT IS ONLY CHECKED!!
+  // else {
+  //   includeUpperCaseCharacters = false;
+  //   val = lowercase + numbers + specialChar;
+  // }
 
   let password = "";
   var choice = document.getElementById("slider").value;
