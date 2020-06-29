@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random Password Generator</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -23,31 +23,32 @@
           <!-- CONTENT SECTION -->
       <div class="content">
         <h2>Generate a Random Password!</h2>
-        <br />
+        <br>
         <input type="text" id="display">
-<br>
+        <br>
         <input type="checkbox" id="uppercase" onclick="upperCaseCheckbox()" checked>
-<label for="uppercase"> Uppercase letters</label><br>
+        <label for="uppercase"> Uppercase letters</label><br>
 
-<input type="checkbox" id="lowercase" onclick="lowerCaseCheckbox()" checked>
-<label for="lowercase"> Lowercase letters</label><br>
+        <input type="checkbox" id="lowercase" onclick="lowerCaseCheckbox()" checked>
+        <label for="lowercase"> Lowercase letters</label><br>
 
-<input type="checkbox" id="number" onclick="numberCheckbox()" checked>
-<label for="numbers"> Numbers</label><br>
+        <input type="checkbox" id="number" onclick="numberCheckbox()" checked>
+        <label for="numbers"> Numbers</label><br>
 
-<input type="checkbox" id="special-char" onclick="specialCharCheckBox()" checked>
-<label for="specialChar"> Special Characters</label><br>
+        <input type="checkbox" id="special-char" onclick="specialCharCheckBox()" checked>
+        <label for="specialChar"> Special Characters</label><br>
 
-        <br />
+        <br>
         <input type="range" min="8" max="128" value= "12" name="slider" id="slider">
-        <br />
+        <div id="length"></div>
+        <br>
 
         <!-- BUTTON -->
         <button onclick= "gen()">Generate Password</button>
         <!-- <button onclick=">Copy to clipboard</button> -->
-        <div id="length"></div>
+        
       </div>
 
-    <script src="script.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
