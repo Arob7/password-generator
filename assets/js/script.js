@@ -9,12 +9,34 @@ let includeLowerCaseCharacters = true;
 let includeUpperCaseCharacters = true;
 
 function gen() {
-  // need conditional to get only what will be concatenated below before doing the concat
+  let val = "";
 
-  let val = lowercase + uppercase + numbers + specialChar;
-  // if (includeSpecialCharacters) {
-  //   val = val + specialChar;
-  // }
+  if (includeSpecialCharacters) {
+    val = val + specialChar;
+  } else {
+    includeSpecialCharacters = false;
+    val = lowercase + uppercase + numbers;
+  }
+  if (includeNumberCharacters) {
+    val = val + numbers;
+  } else {
+    includeNumberCharacters = false;
+    val = lowercase + uppercase + specialChar;
+  }
+  if (includeLowerCaseCharacters) {
+    val = val + lowercase;
+  } else {
+    includeLowerCaseCharacters = false;
+    val = uppercase + numbers + specialChar;
+  }
+  if (includeUpperCaseCharacters) {
+    val = val + uppercase;
+  } else {
+    includeUpperCaseCharacters = false;
+    val = lowercase + numbers + specialChar;
+  }
+  // COULD NOT FIGURE OUT HOW TO DISPLAY PASSWORD FROM WHAT IS ONLY CHECKED!!
+
   let password = "";
   var choice = document.getElementById("slider").value;
   for (var i = 0; i < choice; i++) {
@@ -36,12 +58,12 @@ document.getElementById("slider").oninput = function () {
     "Length: " + document.getElementById("slider").value;
 };
 
-// NEED CONDITION STATEMENT FOR CHECKBOXES
+// CONDITION STATEMENT FOR CHECKBOXES
 function upperCaseCheckbox() {
   var upperCaseCheckbox = document.getElementById("uppercase");
   if (upperCaseCheckbox.checked === true) {
     includeUpperCaseCharacters = true;
-    console.log("pulls uppercase");
+    console.log("adds uppercase");
   } else {
     includeUpperCaseCharacters = false;
     console.log("excludes uppercase");
@@ -51,7 +73,7 @@ function lowerCaseCheckbox() {
   var lowerCaseCheckbox = document.getElementById("lowercase");
   if (lowerCaseCheckbox.checked === true) {
     includeLowerCaseCharacters = true;
-    console.log("pulls lowercase");
+    console.log("adds lowercase");
   } else {
     includeLowerCaseCharacters = false;
     console.log("excludes lowercase");
@@ -61,7 +83,7 @@ function numberCheckbox() {
   var numberCheckbox = document.getElementById("number");
   if (numberCheckbox.checked === true) {
     includeNumberCharacters = true;
-    console.log("pulls number");
+    console.log("adds number");
   } else {
     includeNumberCharacters = false;
     console.log("excludes number");
@@ -71,7 +93,7 @@ function specialCharCheckBox() {
   var specialCharCheckbox = document.getElementById("special-char");
   if (specialCharCheckbox.checked === true) {
     includeSpecialCharacters = true;
-    console.log("pulls special-char");
+    console.log("adds special-char");
   } else {
     includeSpecialCharacters = false;
     console.log("excludes special-char");
