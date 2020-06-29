@@ -40,10 +40,10 @@ function gen() {
   //   val = lowercase + numbers + specialChar;
   // }
   else {
-    includeLowerCaseCharacters,
-      includeSpecialCharacters,
-      includeNumberCharacters,
-      (includeUpperCaseCharacters = false);
+    includeLowerCaseCharacters &&
+      includeSpecialCharacters &&
+      includeNumberCharacters &&
+      includeUpperCaseCharacters == false;
     return alert("You must check at least one box!");
   }
 
