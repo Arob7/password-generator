@@ -39,11 +39,12 @@ function gen() {
   //   includeUpperCaseCharacters = false;
   //   val = lowercase + numbers + specialChar;
   // }
-  else {
-    includeLowerCaseCharacters &&
-      includeSpecialCharacters &&
-      includeNumberCharacters &&
-      includeUpperCaseCharacters == false;
+  else if (
+    !includeLowerCaseCharacters &&
+    !includeSpecialCharacters &&
+    !includeNumberCharacters &&
+    !includeUpperCaseCharacters
+  ) {
     return alert("You must check at least one box!");
   }
 
