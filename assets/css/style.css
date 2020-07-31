@@ -1,11 +1,25 @@
 h1,
 h2 {
   text-align: center;
-  color: darkgreen;
+  color: rgb(255, 123, 0);
 }
 
 body {
-  background-color: goldenrod;
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/back_our/20190619/ourmid/pngtree-abstract-rectangle-border-vector-background-image_134506.jpg");
+  font-family: "Fredoka One", cursive;
+}
+
+.gen-container {
+  width: 1000px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#passbox {
+  background-color: rgb(15, 11, 73);
 }
 
 .content {
@@ -15,10 +29,13 @@ body {
   width: 100%;
   border-style: groove;
   text-align: center;
+  color: rgb(255, 123, 0);
+  border-color: hotpink;
 }
 
 #display {
-  width: 70%;
+  width: 100%;
+  background-color: silver;
 }
 
 #slider {

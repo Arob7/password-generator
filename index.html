@@ -4,50 +4,94 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random Password Generator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <!-- HEADER -->
     <header>
-      <h1>Password Generator</h1>
+      <!-- <h1>Password Generator</h1> -->
     </header>
 
     <!-- CONTAINER -->
-    <div class="container">
-
+    <div class="gen-container">
       <!-- ROW -->
-      <div class="row">
-
-        <div class="col-lg-8 col-sm-12">
-
+      <div class="row d-flex justify-content-center">
+        <div class="col-xs-8 col-xs-12">
           <!-- CONTENT SECTION -->
-      <div class="content">
-        <h2>Generate a Random Password!</h2>
-        <br>
-        <input type="text" id="display">
-        <br>
-        <input type="checkbox" id="uppercase" onclick="upperCaseCheckbox()" checked>
-        <label for="uppercase"> Uppercase letters</label><br>
+          <div class="content" id="passbox">
+            <h2>Generate a Random Password!</h2>
+            <br />
+            <input
+              type="text"
+              placeholder="Random password will generate here"
+              id="display"
+            />
+            <br />
+            <input
+              type="checkbox"
+              id="uppercase"
+              onclick="upperCaseCheckbox()"
+              checked
+            />
+            <label for="uppercase"> Uppercase letters</label><br />
 
-        <input type="checkbox" id="lowercase" onclick="lowerCaseCheckbox()" checked>
-        <label for="lowercase"> Lowercase letters</label><br>
+            <input
+              type="checkbox"
+              id="lowercase"
+              onclick="lowerCaseCheckbox()"
+              checked
+            />
+            <label for="lowercase"> Lowercase letters</label><br />
 
-        <input type="checkbox" id="number" onclick="numberCheckbox()" checked>
-        <label for="number"> Numbers</label><br>
+            <input
+              type="checkbox"
+              id="number"
+              onclick="numberCheckbox()"
+              checked
+            />
+            <label for="number"> Numbers</label><br />
 
-        <input type="checkbox" id="special-char" onclick="specialCharCheckBox()" checked>
-        <label for="specialChar"> Special Characters</label><br>
+            <input
+              type="checkbox"
+              id="special-char"
+              onclick="specialCharCheckBox()"
+              checked
+            />
+            <label for="specialChar"> Special Characters</label><br />
 
-        <br>
-        <input type="range" min="8" max="128" value= "12" name="slider" id="slider">
-        <div id="length"></div>
-        <br>
+            <br />
+            <input
+              type="range"
+              min="8"
+              max="128"
+              value="12"
+              name="slider"
+              id="slider"
+            />
+            <div id="length"></div>
+            <br />
 
-        <!-- BUTTON -->
-        <button onclick= "gen()">Generate Password</button>
-        <!-- <button onclick=">Copy to clipboard</button> -->
-        
+            <!-- BUTTON -->
+            <button onclick="gen()">Generate Password</button>
+            <!-- <button onclick=">Copy to clipboard</button> -->
+          </div>
+        </div>
       </div>
+    </div>
+
+    <!-- <footer>
+        <h5>Created by Arob7</h5>
+      </footer> -->
 
     <script src="./assets/js/script.js"></script>
   </body>

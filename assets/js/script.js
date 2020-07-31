@@ -14,32 +14,18 @@ function gen() {
   if (includeSpecialCharacters) {
     val = val + specialChar;
   }
-  // else {
-  //   includeSpecialCharacters = false;
-  //   val = lowercase + uppercase + numbers;
-  // }
+
   if (includeNumberCharacters) {
     val = val + numbers;
   }
-  // else {
-  //   includeNumberCharacters = false;
-  //   val = lowercase + uppercase + specialChar;
-  // }
+
   if (includeLowerCaseCharacters) {
     val = val + lowercase;
   }
-  // else {
-  //   includeLowerCaseCharacters = false;
-  //   val = uppercase + numbers + specialChar;
-  // }
+
   if (includeUpperCaseCharacters) {
     val = val + uppercase;
-  }
-  // else {
-  //   includeUpperCaseCharacters = false;
-  //   val = lowercase + numbers + specialChar;
-  // }
-  else if (
+  } else if (
     !includeLowerCaseCharacters &&
     !includeSpecialCharacters &&
     !includeNumberCharacters &&
